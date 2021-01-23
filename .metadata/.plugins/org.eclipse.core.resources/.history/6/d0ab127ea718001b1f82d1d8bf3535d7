@@ -1,0 +1,15 @@
+package Arreglos;
+import javax.swing.*;
+
+public class Arreglos2 {
+public static void main(String[] args) {
+	
+	String[] paises= {"Argentina","España","China","Brasil","Francia"};
+	
+	//for(EACH) 
+	for(String i: paises) {	
+	System.out.println(i);		
+	}
+}
+
+}

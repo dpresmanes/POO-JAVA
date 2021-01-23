@@ -1,0 +1,186 @@
+package PlayList;
+
+public class PlayList {
+	private String titulo;
+	private double duracion;
+	private String album;
+	private String artista;
+	
+	
+	
+	public PlayList (String titulo, double duración, String album, String artista) {
+		this.titulo=titulo;
+		this.duracion=duracion;
+		this.album=album;
+		this.artista=artista;
+	}
+	
+	public PlayList (String titulo, double duración, String album) {
+		this.titulo=titulo;
+		this.duracion=duracion;
+		this.album=album;
+	}
+	
+	public PlayList (String titulo, double duración) {
+		this.titulo=titulo;
+		this.duracion=duracion;
+	}
+	//deje los 3 constructores para que en el main se puedan agregar 2,3 o 4 parámetros en los arrays, sin tener q dejar comillas vacías
+	
+	/**
+	 * Cada Canción está compuesta de su  título, álbum, artista y duración. 
+	 * Proveer todos los constructores de Canción que crea convenientes, pero se debe tener en cuenta que una canción por lo menos 
+	 * se debe crear a partir de su título y duración 
+	 * 
+	 * Se puede agregar canciones hasta el máximo admitido
+	 */
+
+	public void agregarCancion(String titulo, double duración, String álbum, String artista) {
+		this.titulo=titulo;
+		this.duracion=duracion;
+		this.album=album;
+		this.artista=artista;
+	}
+	
+	public String mostarCancion() {
+		return this.titulo;
+	}
+	
+	public double mostrarDuracion() {
+		return this.duracion;
+	}
+	
+	
+	
+	/*
+	 * Se puede quitar una canción pasándole alguno de los datos que la compone. 
+	 */
+	public void quitarCancion(String cancion) {
+		this.titulo=cancion;
+		if(cancion.equalsIgnoreCase(this.titulo)) {
+			this.titulo=null;
+			this.duracion=0;
+			this.artista=null;
+			this.album=null;
+		}
+	}
+	
+	/*
+	 * Se puede consultar la duración de una canción pasándole el título. Si varias canciones tienen el mismo título, 
+	 * devuelve la duración de todas. Si la canción no existe, devuelve (-1). Las búsquedas no deben ser "case sensitive”. 
+
+	 */
+	public double consultarDuracion(String cancion) {
+		
+		if(cancion.equalsIgnoreCase(this.titulo)) {
+			return this.duracion;
+		}else {
+			return -1;
+		}
+	}
+	
+	/*
+	 * Se puede consultar la duración completa de la playlist. 
+	 */
+	 public double duracionCompleta(PlayList miPlaylist[]) {
+   	 
+   	 double acu=0;
+   	 
+   		 for(int i=0;i<miPlaylist.length;i++) {
+   		 
+   		 acu=acu + miPlaylist[i].duracion;
+   		 
+   		 }
+   	 
+   		 return acu;
+	}
+    	
+
+		
+	
+	/*
+	 * Se puede consultar la cantidad de canciones. 
+	 */
+		 public int cantidadDeCanciones(PlayList miPlaylist[]) {
+   	 
+   	 int cont=0;
+   	 
+   	 for(int i=0;i<miPlaylist.length;i++) {
+   	 
+   		 cont++;    
+   	 }
+   	 return cont;
+   	 
+	}
+	/*
+	 * Se puede consultar la canción de mayor duración y también la de menor duración.
+	 */
+
+public double mayorDuracion(PlayList miPlaylist[]) {
+		
+		double max=0;
+		
+		for(int i=0; i<miPlaylist.length; i++) {
+			
+			if(miPlaylist[i].duracion > max) {
+				max = miPlaylist[i].duracion;
+			}
+		}
+		
+		return max;
+	}
+
+	
+	public double menorDuracion(PlayList miPlaylist[]) {
+		
+		double min = miPlaylist[0].duracion;
+		
+		for(int i=0; i<miPlaylist.length; i++) {
+			
+			if (miPlaylist[i].duración < min) {
+				min = miPlaylist[i].duracion;
+			}
+		}
+		
+		return min;
+	}
+
+	
+	/*
+	 * Se puede mostrar la lista ordenada por título de la canción.
+	 */
+
+	public String ordenarCanciones() {
+		return null;
+		
+	}
+	
+	
+	/*
+	 * Se puede mostrar la lista ordenada por artista y dentro de las canciones que pertenecen a un artista, ordenadas por título.
+	 */
+	public String ordenarCancionesPorArtistas() {
+		return null;
+	}
+	
+	
+	
+	/*
+	 * Simular la reproducción de la playlist eligiendo alguno de los criterios anteriores y además en orden aleatorio.
+	 */
+	
+public PlayList cancionAlAzar(PlayList miPlaylist[]) {
+		
+		int azar = (int) (Math.random()* miPlaylist.length);
+	
+		return miPlaylist[azar];
+	}
+
+	
+	
+	/*
+	 * Implementar todas las pruebas unitarias (JUnit) que se consideren necesarias para demostrar el correcto funcionamiento de todas las capacidades de la playlist
+
+	 */
+
+}

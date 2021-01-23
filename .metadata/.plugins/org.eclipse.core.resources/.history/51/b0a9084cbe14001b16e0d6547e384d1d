@@ -1,0 +1,24 @@
+package ArreglosUno;
+
+import java.util.Arrays;
+
+public class Arreglo {
+	private int numeros;
+	
+	public Arreglo (int numeros) {
+		this.numeros = numeros;
+	}
+	
+	public int[] MostrarArreglo(Arreglo[] numeros) {
+		int[] arreglo = new int[8]; 
+		for (int i = 0; i < numeros.length; i++)
+			
+			if (arreglo[i] != null)
+				
+				return arreglo;	
+			
+	}
+		  
+			 
+
+}

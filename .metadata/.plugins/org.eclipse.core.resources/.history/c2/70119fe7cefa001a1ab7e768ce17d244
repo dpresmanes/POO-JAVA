@@ -1,0 +1,14 @@
+package SemanaCincoSumo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class LuchadorTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

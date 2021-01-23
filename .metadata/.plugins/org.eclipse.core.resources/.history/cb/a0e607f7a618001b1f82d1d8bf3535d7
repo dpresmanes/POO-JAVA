@@ -1,0 +1,15 @@
+package Arreglos;
+
+public class Arreglos2 {
+public static void main(String[] args) {
+	
+	String[] paises= {"Argentina","España","China","Brasil","Francia"};
+	
+	//System.out.println(mi_arreglo[3]); Muestra la posicion indicada 
+	for(String i: paises) {	
+	System.out.println(i);	
+		
+	}
+}
+
+}

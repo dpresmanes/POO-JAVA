@@ -1,0 +1,17 @@
+package ArreglosUno;
+
+import Remera;
+
+public class Arreglo {
+	private int numeros;
+	
+	public Arreglo (int numeros) {
+		this.numeros = numeros;
+	}
+	
+	public int[] MostrarArreglo(Arreglo[] numeros) {
+		return null;
+		
+	}
+
+}

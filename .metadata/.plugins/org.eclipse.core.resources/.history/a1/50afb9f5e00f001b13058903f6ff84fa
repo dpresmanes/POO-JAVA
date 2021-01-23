@@ -1,0 +1,22 @@
+package DatosAlfanumericos;
+
+public class test {
+	
+	public static void main(String[] args) {
+	
+		ejerUno c = new ejerUno('5');
+		ejerUno d = new ejerUno("rodrigo");
+		c.esDigito();
+		c.esLetra();
+		c.esMayuscula();
+		c.esMinuscula();
+		
+		
+		
+		
+	}
+
+	
+	
+
+}

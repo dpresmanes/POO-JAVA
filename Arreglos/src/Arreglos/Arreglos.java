@@ -1,0 +1,30 @@
+package Arreglos;
+
+public class Arreglos {
+	
+	/*
+	 * Declaracion de un arreglo: int[] mi_arreglo = new int[10];
+	 * Iniciacion de valores:     mi_arreglo[0] = 15; 
+	 * Declarar Matriz en una misma Linea: int[] mi_arreglo = {15,16,17,18};
+	 */
+	public static void main(String[] args) {
+		//int [] mi_arreglo = new int [5];
+		
+		//mi_arreglo[0] = 2;
+		//mi_arreglo[1] = 25;
+		//mi_arreglo[2] = 3;
+		//mi_arreglo[3] = -10;
+		//mi_arreglo[4] = 6;
+		
+int[] mi_arreglo= {2,25,3,-10,6};
+		
+		//System.out.println(mi_arreglo[3]); Muestra la posicion indicada 
+		for(int i=0;i<mi_arreglo.length;i++) {	
+		System.out.println(mi_arreglo[i]);	
+			
+		}
+		
+	}
+	
+
+}

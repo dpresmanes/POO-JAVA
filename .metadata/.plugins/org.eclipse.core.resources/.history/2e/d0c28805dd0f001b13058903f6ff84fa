@@ -1,0 +1,21 @@
+package DatosAlfanumericos;
+
+public class test {
+	
+	public static void main(String[] args) {
+	
+		ejerUno c = new ejerUno('M');
+		//c.esDigito();
+		//c.esLetra();
+		c.esMayuscula();
+		c.esMinuscula();
+		
+		
+		
+		
+	}
+
+	
+	
+
+}

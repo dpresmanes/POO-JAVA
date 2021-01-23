@@ -1,0 +1,10 @@
+package PracticaParcial;
+
+public class TestPersona {
+public static void main(String[] args) {
+	Persona p1 = new Persona (12345678,"Lucas",32 );
+	Persona p2 = new Persona (12345678,"Walter",46);
+	
+	System.out.println(p1.equals(p2));
+}
+}

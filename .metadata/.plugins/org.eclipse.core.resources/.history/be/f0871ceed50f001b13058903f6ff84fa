@@ -1,0 +1,23 @@
+package DatosAlfanumericos;
+
+/*
+ * 1. Determinar si un carácter es un digito numérico 
+ * (función esDigito(char c)).
+ */
+
+public class ejerUno {
+	public char d;
+	
+public ejerUno (char d) {
+	this.d = d ; 
+}
+
+public  void esDigito ()
+{
+	if (Character.isDigit(this.d)) 
+		System.out.println("Es un numero");
+	else 
+		System.out.println("No es un numero");	
+}
+
+}

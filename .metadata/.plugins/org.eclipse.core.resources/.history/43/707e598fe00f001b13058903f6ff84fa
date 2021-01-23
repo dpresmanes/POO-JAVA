@@ -1,0 +1,64 @@
+package DatosAlfanumericos;
+
+/*
+ * 1. Determinar si un carácter es un digito numérico 
+ * (función esDigito(char c)).
+ * 2. Determinar si un carácter es una letra (función esLetra(char c)).
+ * 3. Determinar si un carácter es una letra mayúscula o minúscula (función esMayuscula(char c) y esMinuscula(char c)).
+ * 4. Determinar la longitud de una cadena (función longitud)
+
+
+
+ */
+ 
+
+public class ejerUno {
+	public char d;
+	public String c;
+	
+	
+public ejerUno (char d, String c ) {
+	this.d = d; 
+	this.c = c;
+}
+
+public  void esDigito ()
+{
+	if (Character.isDigit(this.d)) 
+		System.out.println("Es un numero");
+	else
+		System.out.println("No es un numero");
+	
+}
+
+public void esLetra () {
+	if (Character.isAlphabetic(this.d))
+		System.out.println("Es una Letra");
+	else
+		System.out.println("No es una Letra");
+}
+
+public void esMinuscula () {
+    if(Character.isLowerCase(this.d))
+    	System.out.println("Minuscula" );
+    else 
+    	System.out.println("No es minuscula");
+}
+
+public void esMayuscula () {
+    if(Character.isUpperCase(this.d))
+    	System.out.println("Mayuscula");	
+    else
+    	System.out.println("No es mayuscula");
+}
+
+public int longitudDeCadena() {	
+	return c.length();	
+}
+
+
+
+
+
+
+}

@@ -1,0 +1,15 @@
+package DatosAlfanumericos;
+
+public class test {
+	
+	public static void main(String[] args) {
+	
+		ejerUno c = new ejerUno('2');
+		c.esDigito();
+		
+	}
+
+	
+	
+
+}
